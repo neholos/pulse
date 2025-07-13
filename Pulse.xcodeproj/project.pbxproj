@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BB4338CF2E23D1C40065E781 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = BB4338CE2E23D1C40065E781 /* ComposableArchitecture */; };
+		BB4338DA2E23E8330065E781 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB4338D92E23E8330065E781 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB4338BF2E23D11C0065E781 /* Pulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4338D82E23E80E0065E781 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		BB4338D92E23E8330065E781 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,6 +40,8 @@
 		BB4338B62E23D11C0065E781 = {
 			isa = PBXGroup;
 			children = (
+				BB4338D92E23E8330065E781 /* README.md */,
+				BB4338D82E23E80E0065E781 /* LICENSE.md */,
 				BB4338C12E23D11C0065E781 /* Pulse */,
 				BB4338C02E23D11C0065E781 /* Products */,
 			);
@@ -118,6 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4338DA2E23E8330065E781 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
