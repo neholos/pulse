@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BB4338CF2E23D1C40065E781 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = BB4338CE2E23D1C40065E781 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BB4338BF2E23D11C0065E781 /* Pulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4338CF2E23D1C40065E781 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = Pulse;
 			packageProductDependencies = (
+				BB4338CE2E23D1C40065E781 /* ComposableArchitecture */,
 			);
 			productName = Pulse;
 			productReference = BB4338BF2E23D11C0065E781 /* Pulse.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = BB4338B62E23D11C0065E781;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BB4338CD2E23D1C40065E781 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BB4338C02E23D11C0065E781 /* Products */;
 			projectDirPath = "";
@@ -269,7 +278,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.neholos.Pulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.neholos.Pulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -330,6 +339,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB4338CD2E23D1C40065E781 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.20.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB4338CE2E23D1C40065E781 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB4338CD2E23D1C40065E781 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB4338B72E23D11C0065E781 /* Project object */;
 }
