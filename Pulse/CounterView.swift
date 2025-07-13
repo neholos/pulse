@@ -15,13 +15,13 @@ struct CounterView: View {
         VStack {
             Text("\(store.count)")
                 .font(.largeTitle)
+                .monospacedDigit()
                 .padding()
-                .background(Color.black.opacity(0.1))
-                .cornerRadius(10)
                 .contentTransition(.numericText())
+            
             HStack {
                 Button("-") {
-                    store.send(.decrementButtonTapped)
+                    store.send(.decrementButtonTapped, animation: .default)
                 }
                 .font(.largeTitle)
                 .padding()
@@ -29,15 +29,16 @@ struct CounterView: View {
                 .cornerRadius(10)
                 
                 Button("+") {
-                    store.send(.incrementButtonTapped)
+                    store.send(.incrementButtonTapped, animation: .default)
                 }
                 .font(.largeTitle)
                 .padding()
                 .background(Color.black.opacity(0.1))
                 .cornerRadius(10)
             }
+            
             Button("Reset") {
-                store.send(.resetButtonTapped)
+                store.send(.resetButtonTapped, animation: .default)
             }
             .font(.largeTitle)
             .padding()
